@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Writter_Kata.Containers;
 using Writter_Kata.Interfaces;
 using Writter_Kata.Models;
+using Writter_Kata.Models.Factorys;
 using Writter_Kata.Models.Formaters;
 
 namespace Writter_Kata
@@ -10,38 +12,59 @@ namespace Writter_Kata
     {
         static void Main(string[] args)
         {
-            Dictionary<TypeFormat, IWrittable> createWritters = new Dictionary<TypeFormat, IWrittable>
-            {
-                { TypeFormat.json, new Writter(new JsonFormater()) },
-                { TypeFormat.xml, new Writter(new XmlFormater()) },
-                { TypeFormat.yml, new Writter(new YmlFormater()) },
-                { TypeFormat.txt, new Writter(new TxtFormater()) }
-            };
-            WritterFactory writterFactory = new WritterFactory(createWritters);
+            FactoryContainer container = new FactoryContainer();
+            WritterFactory writterFactory = container.GetWritterFactory();
+            CloudFactory cloudFactory = container.GetWritterCloud();
             IWrittable writter = null;
             ///
+            string tipo = "";
             string opcion = "";
             Vehicle vehiculo = new Vehicle(Models.VehicleType.Coche, "KIA", "Río");
             ///
+            Console.WriteLine("Type of result: 'File' or 'Cloud'");
+            tipo = Console.ReadLine();
+
+            if (tipo == "File")
+            {
+                
+            } else if (tipo == "Cloud")
+            {
+
+            } else
+            {
+                Console.WriteLine("Incorrect option... Try again.");
+            }
 
             Console.WriteLine("Introduzca formato de salida de archivo...(json/xml/yml/txt)");
             opcion = Console.ReadLine();
 
             if (opcion == "json")
             {
-                writter = writterFactory.CreateWritter(TypeFormat.json);
+                if (tipo == "File")
+                    writter = writterFactory.CreateWritter(TypeFormat.json);
+                else
+                    writter = cloudFactory.CreateWritter(TypeFormat.json);
             } 
             else if (opcion == "xml")
             {
-                writter = writterFactory.CreateWritter(TypeFormat.xml);
+                if (tipo == "File")
+                    writter = writterFactory.CreateWritter(TypeFormat.xml);
+                else
+                    writter = cloudFactory.CreateWritter(TypeFormat.xml);
             } 
             else if (opcion == "yml")
             {
-                writter = writterFactory.CreateWritter(TypeFormat.yml);
+                if (tipo == "File")
+                    writter = writterFactory.CreateWritter(TypeFormat.yml);
+                else
+                    writter = cloudFactory.CreateWritter(TypeFormat.yml);
             } 
             else if (opcion == "txt")
             {
-                writter = writterFactory.CreateWritter(TypeFormat.txt);
+                if (tipo == "File")
+                    writter = writterFactory.CreateWritter(TypeFormat.txt);
+                else
+                    writter = cloudFactory.CreateWritter(TypeFormat.txt);
             } 
             else
             {

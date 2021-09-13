@@ -17,7 +17,7 @@ namespace Writter_Kata.Models
         public void Write(string message)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"File Type: {this._IFormatereable.GetFormat().ToString()}");
+            sb.AppendLine($"File Type (File): {this._IFormatereable.GetFormat().ToString()}");
             sb.AppendLine($"\tMessage: {message}");
 
             Console.WriteLine(sb.ToString());
