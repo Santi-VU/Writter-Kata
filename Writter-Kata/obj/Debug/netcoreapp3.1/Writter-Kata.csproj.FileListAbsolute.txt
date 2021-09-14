@@ -4,7 +4,6 @@ C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\bin\Debug\netco
 C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\bin\Debug\netcoreapp3.1\Writter-Kata.runtimeconfig.dev.json
 C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\bin\Debug\netcoreapp3.1\Writter-Kata.dll
 C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\bin\Debug\netcoreapp3.1\Writter-Kata.pdb
-C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\obj\Debug\netcoreapp3.1\Writter-Kata.csprojAssemblyReference.cache
 C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\obj\Debug\netcoreapp3.1\Writter-Kata.AssemblyInfoInputs.cache
 C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\obj\Debug\netcoreapp3.1\Writter-Kata.AssemblyInfo.cs
 C:\Users\holacons\Desktop\VU WorkSpace\Writter-Kata\Writter-Kata\obj\Debug\netcoreapp3.1\Writter-Kata.csproj.CoreCompileInputs.cache

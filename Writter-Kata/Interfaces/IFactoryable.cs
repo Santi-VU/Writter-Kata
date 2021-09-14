@@ -7,6 +7,6 @@ namespace Writter_Kata.Interfaces
 {
     interface IFactoryable
     {
-        public IWrittable CreateWritter(TypeFormat typeFormat);
+        IWrittable CreateWritter(TypeFormat typeFormat);
     }
 }

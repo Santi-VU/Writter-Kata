@@ -5,7 +5,7 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models
 {
-    class WritterFactory : IFactoryable
+    public class WritterFactory : IFactoryable
     {
         public Dictionary<TypeFormat, IWrittable> _writterCreator;
 

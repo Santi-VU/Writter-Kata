@@ -5,7 +5,7 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models
 {
-    class WritterCloud : IWrittable
+    public class WritterCloud : IWrittable
     {
         public IFormaterable _IFormatereable { get; protected set; }
 

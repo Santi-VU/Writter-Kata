@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata.Models
 {
-    enum VehicleType
+    public enum VehicleType
     {
         Coche = 0,
         Moto = 1,

@@ -8,7 +8,7 @@ using Writter_Kata.Models.Formaters;
 
 namespace Writter_Kata.Containers
 {
-    class FactoryContainer
+    public class FactoryContainer
     {
         private static readonly Dictionary<TypeFormat, IWrittable> createWritters = new Dictionary<TypeFormat, IWrittable>
             {

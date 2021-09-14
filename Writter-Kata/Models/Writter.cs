@@ -5,9 +5,9 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models
 {
-    class Writter : IWrittable
+    public class Writter : IWrittable
     {
-        public IFormaterable _IFormatereable { get; protected set; }
+        private IFormaterable _IFormatereable { get; set; }
 
         public Writter (IFormaterable IFormatereable)
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata.Models
 {
-    class Vehicle
+    public class Vehicle
     {
         public VehicleType type { get; protected set; }
         public string mark { get; protected set; }

@@ -5,9 +5,9 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models.Factorys
 {
-    class CloudFactory : IFactoryable
+    public class CloudFactory : IFactoryable
     {
-        public Dictionary<TypeFormat, IWrittable> _cloudCreator;
+        private Dictionary<TypeFormat, IWrittable> _cloudCreator;
 
         public CloudFactory(Dictionary<TypeFormat, IWrittable> cloudCreator)
         {

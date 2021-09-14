@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata.Models
 {
-    enum TypeFormat
+    public enum TypeFormat
     {
         json = 0,
         xml = 1,

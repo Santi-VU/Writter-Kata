@@ -5,7 +5,7 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models.Formaters
 {
-    class JsonFormater : IFormaterable
+    public class JsonFormater : IFormaterable
     {
         public TypeFormat GetFormat()
         {

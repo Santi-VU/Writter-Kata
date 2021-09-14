@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata.Interfaces
 {
-    interface IWrittable
+    public interface IWrittable
     {
         public void Write(string message);
     }

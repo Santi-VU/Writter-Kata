@@ -5,7 +5,7 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models.Formaters
 {
-    class XmlFormater : IFormaterable
+    public class XmlFormater : IFormaterable
     {
         public TypeFormat GetFormat()
         {
